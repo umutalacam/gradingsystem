@@ -10,8 +10,8 @@ public class DBUtil {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 
     private static final String DB_URL = "jdbc:mysql://localhost/grading_system";
-    private static final String USER = "root";
-    private static final String PASS = "wryslx3nks";
+    private static final String USER = "DB_USERNAME";
+    private static final String PASS = "DB_PASSWORD";
 
     public static final int SUCCESS = 10;
     public static final int FAIL = 0;
