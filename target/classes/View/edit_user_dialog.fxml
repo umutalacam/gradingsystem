@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.SwingNode?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="223.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditUserDialog">
+   <children>
+      <SwingNode fx:id="node_id" />
+      <SwingNode fx:id="node_operation" />
+      <TextField fx:id="text_field_user_name" layoutX="117.0" layoutY="52.0" prefHeight="26.0" prefWidth="256.0" promptText="User Name" />
+      <PasswordField fx:id="password_field_password" layoutX="117.0" layoutY="88.0" prefHeight="26.0" prefWidth="256.0" promptText="Password" />
+      <TextField fx:id="text_field_first_name" layoutX="15.0" layoutY="121.0" prefHeight="26.0" prefWidth="179.0" promptText="First Name" />
+      <TextField fx:id="text_field_last_name" layoutX="196.0" layoutY="121.0" prefHeight="26.0" prefWidth="179.0" promptText="Last Name" />
+      <TextField fx:id="text_field_e_mail" layoutX="15.0" layoutY="153.0" prefHeight="26.0" prefWidth="179.0" promptText="E-Mail" />
+      <TextField fx:id="text_field_telephone" layoutX="196.0" layoutY="153.0" prefHeight="26.0" prefWidth="179.0" promptText="Telephone" />
+      <TextField fx:id="text_field_id" layoutX="117.0" layoutY="19.0" prefHeight="26.0" prefWidth="256.0" promptText="ID" />
+      <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../user_avatar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_add_instructor" layoutX="318.0" layoutY="189.0" mnemonicParsing="false" onAction="#applyAction" text="Apply" />
+      <Button layoutX="245.0" layoutY="189.0" mnemonicParsing="false" onAction="#cancelAction" text="Cancel" />
+   </children>
+</AnchorPane>

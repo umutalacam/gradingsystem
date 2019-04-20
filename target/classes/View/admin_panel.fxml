@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin_Panel">
+   <children>
+      <TabPane layoutY="-80.0" prefHeight="523.0" prefWidth="790.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Instructors">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <TableView fx:id="table_instructors" layoutX="22.0" layoutY="130.0" prefHeight="360.0" prefWidth="768.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+                           <columns>
+                              <TableColumn fx:id="id_instructor" prefWidth="68.0" text="ID" />
+                              <TableColumn fx:id="name_instructor" prefWidth="252.0" text="NAME" />
+                              <TableColumn fx:id="email_instructor" minWidth="7.0" prefWidth="253.0" text="EMAIL" />
+                              <TableColumn fx:id="tel_instructor" prefWidth="209.0" text="TELEPHONE" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btn_add_instructor" onAction="#addInstructorAction" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Add" AnchorPane.leftAnchor="10.0" />
+                        <Button fx:id="btn_delete_instructor" onAction="#deleteInstructorAction" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" text="Delete" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="btn_edit_instructor" onAction="#editInstructorAction" layoutX="68.0" layoutY="14.0" mnemonicParsing="false" text="Edit" AnchorPane.leftAnchor="60.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="students_table" text="Students">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="485.0" prefWidth="1030.0">
+                     <children>
+                        <TableView fx:id="table_students" layoutX="245.0" layoutY="314.0" prefHeight="279.0" prefWidth="785.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+                           <columns>
+                              <TableColumn fx:id="id_student" prefWidth="142.0" text="ID" />
+                              <TableColumn fx:id="name_student" prefWidth="199.0" text="NAME" />
+                              <TableColumn fx:id="email_student" minWidth="7.0" prefWidth="197.0" text="EMAIL" />
+                              <TableColumn fx:id="tel_student" prefWidth="195.0" text="TELEPHONE" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btn_add_student" onAction="#addStudentAction" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Add" AnchorPane.leftAnchor="10.0" />
+                        <Button fx:id="btn_delete_student" onAction="#deleteStudentAction" layoutX="551.0" layoutY="14.0" mnemonicParsing="false" text="Delete" AnchorPane.rightAnchor="10.0" />
+                        <Button fx:id="btn_edit_student" onAction="#editStudentAction" layoutX="68.0" layoutY="14.0" mnemonicParsing="false" text="Edit" AnchorPane.leftAnchor="60.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
